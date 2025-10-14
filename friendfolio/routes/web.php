@@ -9,11 +9,14 @@ Route::get('/', function () {
 })->name('home');
 
 // POST роуты для обработки
-Route::post('/register', [AuthController::class, 'register'])->name('register.post');
-Route::post('/login', [AuthController::class, 'login'])->name('login.post');
-Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+Route::controller(AuthController::class)->group(function () {
+    Route::post('/register', 'register')->name('register.post');
+    Route::post('/login', 'login')->name('login.post');
+    Route::post('/logout', 'logout')->name('logout');
+});
 
 // Страница заметок
 Route::get('/notes', function () {
     return view('notes');
 })->name('notes');
+

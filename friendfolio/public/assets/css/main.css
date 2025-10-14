@@ -1,0 +1,60 @@
+@import "fonts.css";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+/*Можно переиспользовать данные классы*/
+.button-white{
+    color: #0D0D0D;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #0D0D0D;
+}
+.button-white:hover{
+    transition: .5s;
+    color: #ffffff;
+    background-color: #0D0D0D;
+}
+.button-white:not(hover){
+    transition: .5s;
+}
+.button-black{
+    color: #ffffff;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    background-color: #0D0D0D;
+    border: 1px solid transparent;
+}
+.button-black:hover{
+    transition: .5s;
+    color: #0D0D0D;
+    background-color: #ffffff;
+    border: 1px solid #0D0D0D;
+}
+.button-black:not(hover){
+    transition: .5s;
+}
+
+/*header*/
+
+header{
+    display: flex;
+    padding: 10px 15px 10px 15px;
+    justify-content: space-between;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+}
+/*header-end*/
+
+/*modal*/
+
+/*modal-end*/

@@ -16,13 +16,18 @@
         </section>
 
         <section class="buttons">
-            <button class="button-white"  id="loginBtn">Войти</button>
-            <button class="button-black" id="registerBtn">Зарегистрироваться</button>
+            <button class="button-white"  id="openModal">Войти</button>
+            <button class="button-black" id="openModal2">Зарегистрироваться</button>
         </section>
     @endguest
 </header>
 
-
+<dialog id="modal" class="modal">
+    <div class="modal-body">
+        dsfgdfs
+        <button id="closeModal">закрыть</button>
+    </div>
+</dialog>
 <script defer src="assets/JS/main.js"></script>
 </body>
 </html>

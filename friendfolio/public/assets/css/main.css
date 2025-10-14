@@ -6,6 +6,9 @@
     text-decoration: none;
     list-style-type: none;
 }
+.lock{
+    overflow: hidden;
+}
 /*Можно переиспользовать данные классы*/
 .button-white{
     color: #0D0D0D;
@@ -55,6 +58,21 @@ header{
 }
 /*header-end*/
 
-/*modal*/
 
+/*modal*/
+.modal{
+    padding: 0;
+    border: none;
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    margin: auto;
+}
+.modal::backdrop{
+    backdrop-filter: blur(5px);
+}
+.modal-body{
+backdrop-filter: blur(5px);
+}
 /*modal-end*/

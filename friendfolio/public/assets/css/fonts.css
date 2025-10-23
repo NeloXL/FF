@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+body{
+    font-family: "Inter";
+}
+.thin{
+    font-weight: 100;
+}
+.regular{
+    font-weight: 400;
+}
+.bold{
+    font-weight: 700;
+}

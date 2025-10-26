@@ -36,7 +36,7 @@
 
 
         <div class="form-for-login form active" id="loginForm">
-            <form action="#" method="post">
+            <form action="{{route('login.post')}}" method="POST">
                 @csrf
                 <h2>Добро пожаловать!</h2>
                 <p>Введите данные для входа</p>
@@ -50,7 +50,7 @@
 
 
         <div class="form-for-register form" id="registerForm">
-            <form action="#" method="post">
+            <form action="{{route('register.post')}}" method="POST">
                 @csrf
                 <h2>Создать аккаунт</h2>
                 <p>Начните сохранять важные моменты</p>

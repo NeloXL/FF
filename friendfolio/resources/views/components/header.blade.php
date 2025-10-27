@@ -9,6 +9,7 @@
 </head>
 <body>
 <header>
+    <!--**
     @guest
         <section class="logo">
             <img src="{{ asset('assets/img/logoFF.png') }}" style="width: 48px; aspect-ratio: 1/1" alt="Логотип" class="logo-img">
@@ -20,6 +21,25 @@
             <button class="button-black" id="openModal2">Зарегистрироваться</button>
         </section>
     @endguest
+
+        **-->
+    <section class="logo">
+        <img src="{{ asset('assets/img/logoFF.png') }}" style="width: 48px; aspect-ratio: 1/1" alt="Логотип" class="logo-img">
+        <div class="logo-text regular">FriendFolio</div>
+    </section>
+    @guest
+        <section class="buttons">
+            <button class="button-white"  id="openModal">Войти</button>
+            <button class="button-black" id="openModal2">Зарегистрироваться</button>
+        </section>
+    @endguest
+    @auth
+        <section class="buttons">
+            <form action="{{route("logout")}}">
+                <button class="button-black">Выйти</button>
+            </form>
+        </section>
+    @endauth
 </header>
 
 <dialog id="modal" class="modal">

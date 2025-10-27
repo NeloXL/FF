@@ -61,10 +61,13 @@
                 <h2>Добро пожаловать!</h2>
                 <p>Введите данные для входа</p>
                 <label for="email">Email</label><br>
-                <input type="email" class="modal-input" placeholder="Введите ваш email" id="email" name="email"><br>
+                <input type="text" class="modal-input" placeholder="Введите ваш email" id="email" name="email"><br>
                 <label for="password">Пароль</label><br>
                 <input type="password" class="modal-input" placeholder="Введите ваш пароль" id="password" name="password"><br>
                 <button type="submit" class="button-black">Войти</button>
+                @if($errors->any())
+                    Привет у тебя ошибка
+                @endif
             </form>
         </div>
 

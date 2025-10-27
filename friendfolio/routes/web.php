@@ -13,6 +13,7 @@ Route::controller(AuthController::class)->group(function () {
     Route::post('/register', 'register')->name('register.post');
     Route::post('/login', 'login')->name('login.post');
     Route::post('/logout', 'logout')->name('logout');
+    Route::get('/logout', 'logout');
 });
 
 // Страница заметок

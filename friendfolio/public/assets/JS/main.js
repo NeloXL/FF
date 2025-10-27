@@ -1,3 +1,6 @@
+import axios from 'axios';
+window.axios = axios;
+
 const openModal1 = document.getElementById('openModal');
 const openModal2 = document.getElementById('openModal2');
 const closeModal = document.getElementById('closeModal');

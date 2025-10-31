@@ -89,6 +89,6 @@
     </div>
 
 </dialog>
-<script defer src="assets/JS/main.js"></script>
+{{--<script defer src="assets/JS/main.js"></script>--}}
 </body>
 </html>
